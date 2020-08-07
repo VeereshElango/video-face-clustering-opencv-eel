@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vidfaczer</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-6 col-md">
+                    <div class="wellcome-heading">
+                        <h2>Vidfaczer</h2>
+                        <h3>AI</h3>
+                        <p>Video Facial recognition & Analyzer</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <div class="get-start-area">
+                        <form class="">
+<!--                            <label for="filePath">Paste the path of video file</label>-->
+                            <input type="text" id="filePath" class="form-control email" required placeholder="Enter path of the video file" >
+<!--                            <label for="secondsPerFrame">Number of frames to select per second</label>-->
+                            <input type="text" id="secondsPerFrame" class="form-control email" required placeholder="Enter seconds per frame" value="0.3">
+                            <input type="button" class="submit" value="Start Analysis" onclick="clusterFaces()">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div id="progress" class="col-12 d-flex justify-content-center text-center">
+            </div>
+            <div id="errorDiv" class="alert">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="display-faces">
+        <div class="row" >
+        </div>
+    </div>
+
+</body>
+</html>

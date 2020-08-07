@@ -1,0 +1,17 @@
+bottle==0.12.18
+bottle-websocket==0.2.9
+Eel==0.13.2
+future==0.18.2
+gevent==20.6.2
+gevent-websocket==0.10.1
+greenlet==0.4.16
+imutils==0.5.3
+joblib==0.16.0
+numpy==1.19.1
+opencv-python==4.2.0.34
+scikit-learn==0.23.2
+scipy==1.5.2
+threadpoolctl==2.1.0
+whichcraft==0.6.1
+zope.event==4.4
+zope.interface==5.1.0
